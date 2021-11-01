@@ -9,15 +9,15 @@ window.addEventListener("load", function () {
     // alert("Hello World!");
 
 
-    let Luffy = new NhanVatPhu(document.getElementById('lufi'), 200, 0, 5, 80, 80, 'lufi');
+    let Luffy = new NhanVatPhu(document.getElementById('lufi'), 200, 0, 3, 80, 80, 'lufi');
     let Zoro = new NhanVatPhu(document.getElementById('zoro'), 310, 0, 3, 80, 80, 'zoro');
     let Tuan = new NhanVatPhu(document.getElementById('tuan'), 420, 0, 6, 80, 80, 'tuan');
     let PhanHai = new NhanVatPhu(document.getElementById('phanhai'), 530, 4, 5, 80, 80, 'phanhai');
-    let PhanQuan = new NhanVatPhu(document.getElementById('phanquan'), 660, 0, 1, 200, 200, 'phanquan');
-    let Mikami = new NhanVatPhu(document.getElementById('mikami'), 1050, 110, 0, 80, 80, 'mikami');
+    let PhanQuan = new NhanVatPhu(document.getElementById('phanquan'), 660, 0, 2, 200, 200, 'phanquan');
+    let Mikami = new NhanVatPhu(document.getElementById('mikami'), 1050, 110, 0, 150, 200, 'mikami');
     let Hieu = new NhanVatChinh(document.getElementById('hieu'), 0, 200, 5, 100, 100);
-    Mikami.drawNvPhu(ctx);
-    let array = [Luffy, Zoro, Tuan, PhanHai, PhanQuan,Mikami];
+    // Mikami.drawNvPhu(ctx);
+    let array = [Luffy, Zoro, Tuan, PhanHai, PhanQuan, Mikami];
     Hieu.drawNvChinh(ctx);
 
     canvas.addEventListener("mousedown", function () {
